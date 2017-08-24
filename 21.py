@@ -58,10 +58,10 @@ def jugar(mazo,manoJugador,manoCasa,plantoJug,paso):
 				    print "Gano la casa"
 				else:
 				    print "Gano el jugador"
-	elif (verM_a(manoJugador)):
-	    jugar(mazo, manoJugador, manoCasa, plantoJug, True)
-        elif (verM_a(manoCasa)):
-            jugar(mazo, manoJugador, manoCasa, plantoJug, True)
+	#elif (verM_a(manoJugador)):
+	    #jugar(mazo, manoJugador, manoCasa, plantoJug, True)
+        #elif (verM_a(manoCasa)):
+            #jugar(mazo, manoJugador, manoCasa, plantoJug, True)
 	elif(valor_mano(manoCasa, paso)>=18  or valor_mano(manoJugador, paso)>21):
 	    if((valor_mano(manoCasa, paso)>=valor_mano(manoJugador, paso) and valor_mano(manoCasa, paso)<=21) or valor_mano(manoJugador, paso)>21):
 	        print "Gano la casa"
