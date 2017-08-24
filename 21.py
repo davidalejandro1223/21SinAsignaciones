@@ -32,10 +32,16 @@ def verM_a(mano):
 
 
 def jugar(mazo,manoJugador,manoCasa,plantoJug,paso):
-	print valor_mano(manoCasa, paso)
+        print "la mano de la casa es: "
+        print valor_mano(manoCasa, paso)
+        print "el valor de la mano de la casa es: "
 	print manoCasa
+        print " "
+        print "la mano del jugador es: "
 	print valor_mano(manoJugador, paso)
+        print "el valor de la mano del jugador es: "
 	print manoJugador
+        print " "
 	if mazo!=[] and valor_mano(manoJugador, paso)<= 21 and valor_mano(manoCasa, paso)<= 21:
 		if(manoJugador == []):
 			return jugar(mazo[4:],manoJugador + mazo[:2], manoCasa + mazo[2:4], False, paso)
